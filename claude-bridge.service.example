@@ -1,0 +1,14 @@
+[Unit]
+Description=Claude Telegram Bridge
+After=network.target
+
+[Service]
+Type=simple
+# Edit WorkingDirectory and ExecStart to match where you cloned the repo.
+WorkingDirectory=/path/to/claude-telegram-bridge
+ExecStart=/usr/bin/node /path/to/claude-telegram-bridge/bot.js
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

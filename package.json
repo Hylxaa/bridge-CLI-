@@ -1,0 +1,14 @@
+{
+  "name": "claude-telegram-bridge",
+  "version": "1.0.0",
+  "description": "Chat with Claude Code (and later Codex) from Telegram. Live session, no terminal needed.",
+  "main": "bot.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "dotenv": "^16.4.5"
+  }
+}
